@@ -1,6 +1,7 @@
 import React from "react";
-import Menu from "./menu";
+import Menu from "./Menu";
 import Link from "next/link";
+import CartIcon from "./CartIcon";
 import Image from "next/image";
 
 const Navbar = () => {
@@ -18,6 +19,7 @@ const Navbar = () => {
         <Link href="/">Hamro-Food</Link>
       </div>
 
+
       {/* MOBILE MENU */}
       <div className="md:hidden">
         <Menu />
@@ -33,7 +35,7 @@ const Navbar = () => {
         ) : (
           <Link href="/orders">Orders</Link>
         )}
-       
+        <CartIcon />
       </div>
     </div>
   );
